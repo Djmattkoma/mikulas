@@ -9,12 +9,26 @@ header{
 
 main{
     background-color:  RGB(255,255,230);
+    /*text-align: center;*/
+    grid-template-areas: "header header"
+                        "w1 w2";
 }
 
 h1{
     text-align: center;
     color: red;
+    margin-top: 60px;
+    font-family: cursive;
 }
 
+nav{
+    background-color: red;
+    height: 50px;
+    color: whitesmoke;
+}
+
+article{
+    text-align:justify;
+}
 .box{
 }
