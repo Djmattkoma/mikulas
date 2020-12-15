@@ -1,17 +1,19 @@
-body{
-    background-image: url(../mikulas/kepek/hatter.jpg);
+*{
+    box-sizing: border-box;
 }
 
-header{
-    Height:550px;
-    background-image: url(../mikulas/kepek/fejlec.jpg);
+body{
+    background-image: url(../mikulas/kepek/hatter.jpg);
 }
 
 main{
     background-color:  RGB(255,255,230);
     /*text-align: center;*/
-    grid-template-areas: "header header"
-                        "w1 w2";
+    grid-template-areas: 
+                        "header header header"
+                         "nav nav nav"
+                         "aside" "article" "article"
+                         "footer" "footer" "footer";
 }
 
 h1{
@@ -21,14 +23,36 @@ h1{
     font-family: cursive;
 }
 
+header{
+    Height:550px;
+    background-image: url(../mikulas/kepek/fejlec.jpg);
+    grid-area: header;
+}
+
 nav{
     background-color: red;
     height: 50px;
+    color: whitesmoke;
+    grid-area: nav;
+}
+
+nav a{
     color: whitesmoke;
 }
 
 article{
     text-align:justify;
+    grid-area: article;
+}
+
+footer{
+    text-align: center;
+    background-color: red;
+    grid-area: footer;
+}
+
+footer p{
+    color: whitesmoke;
 }
 .box{
 }
